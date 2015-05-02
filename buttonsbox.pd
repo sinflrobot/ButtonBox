@@ -1,0 +1,118 @@
+#N canvas 0 0 1280 942 10;
+#X obj 183 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 225 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 262 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 296 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 333 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 372 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 407 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 443 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 475 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 512 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 175 116 0;
+#X msg 216 116 1;
+#X msg 258 117 2;
+#X msg 298 118 3;
+#X msg 331 117 4;
+#X msg 364 117 5;
+#X msg 400 118 6;
+#X msg 433 119 7;
+#X msg 471 120 8;
+#X msg 513 120 9;
+#X floatatom 369 205 5 0 0 0 - - -;
+#X obj 19 273 list-lastx 10;
+#X obj 16 332 s LEVEL10;
+#X obj 133 275 list-lastx 9;
+#X obj 130 334 s LEVEL9;
+#X obj 242 274 list-lastx 8;
+#X obj 239 333 s LEVEL8;
+#X obj 338 273 list-lastx 7;
+#X obj 335 332 s LEVEL7;
+#X obj 445 272 list-lastx 6;
+#X obj 442 331 s LEVEL 6;
+#X obj 550 275 list-lastx 5;
+#X obj 547 334 s LEVEL5;
+#X obj 659 277 list-lastx 4;
+#X obj 656 336 s LEVEL4;
+#X obj 484 1168 select;
+#X floatatom 508 1248 5 0 0 0 - - -;
+#X floatatom 569 1250 5 0 0 0 - - -;
+#X msg 453 1070 6;
+#X msg 467 1025 2;
+#X msg 518 1021 list 1 2 3 4 5 9 12 16 18 20;
+#X obj 208 538 SpellCaster;
+#X obj 769 279 list-lastx 3;
+#X obj 769 335 s LEVEL3;
+#X obj 133 466 level4;
+#X obj 678 117 s BOOSHCHANNEL;
+#X obj 792 118 s PROJECTORCHANNEL;
+#X msg 678 88 0;
+#X msg 792 90 1;
+#X obj 678 54 loadbang;
+#X text 680 19 MIDI Channels for Projector and Flamethrowers;
+#X obj 63 466 level3;
+#X obj 76 499 tgl 15 0 empty Loaded3 empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 146 497 tgl 15 0 empty Loaded4 empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 90 603 &&;
+#X obj 97 649 tgl 15 0 Enabled empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X connect 0 0 10 0;
+#X connect 1 0 11 0;
+#X connect 2 0 12 0;
+#X connect 3 0 13 0;
+#X connect 4 0 14 0;
+#X connect 5 0 15 0;
+#X connect 6 0 16 0;
+#X connect 7 0 17 0;
+#X connect 8 0 18 0;
+#X connect 9 0 19 0;
+#X connect 10 0 20 0;
+#X connect 11 0 20 0;
+#X connect 12 0 20 0;
+#X connect 13 0 20 0;
+#X connect 14 0 20 0;
+#X connect 15 0 20 0;
+#X connect 16 0 20 0;
+#X connect 17 0 20 0;
+#X connect 18 0 20 0;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 20 0 23 0;
+#X connect 20 0 25 0;
+#X connect 20 0 27 0;
+#X connect 20 0 29 0;
+#X connect 20 0 31 0;
+#X connect 20 0 33 0;
+#X connect 20 0 42 0;
+#X connect 21 0 22 0;
+#X connect 23 0 24 0;
+#X connect 25 0 26 0;
+#X connect 27 0 28 0;
+#X connect 29 0 30 0;
+#X connect 31 0 32 0;
+#X connect 33 0 34 0;
+#X connect 35 0 36 0;
+#X connect 35 1 37 0;
+#X connect 38 0 35 0;
+#X connect 39 0 35 0;
+#X connect 40 0 35 1;
+#X connect 42 0 43 0;
+#X connect 47 0 45 0;
+#X connect 48 0 46 0;
+#X connect 49 0 47 0;
+#X connect 49 0 48 0;
+#X connect 52 0 54 0;
+#X connect 53 0 54 1;
+#X connect 54 0 55 0;
