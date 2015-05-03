@@ -44,6 +44,7 @@
 #X obj 678 54 loadbang;
 #X text 680 19 MIDI Channels for Projector and Flamethrowers;
 #X obj 442 297 levels;
+#X obj 647 301 midireceiver;
 #X connect 0 0 10 0;
 #X connect 1 0 11 0;
 #X connect 2 0 12 0;

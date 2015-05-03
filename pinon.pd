@@ -1,0 +1,10 @@
+#N canvas 0 0 450 300 10;
+#X obj 96 40 inlet;
+#X obj 96 102 rawcommand;
+#X floatatom 159 68 5 0 0 0 - - -;
+#X obj 159 11 loadbang;
+#X msg 159 41 17;
+#X connect 0 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
